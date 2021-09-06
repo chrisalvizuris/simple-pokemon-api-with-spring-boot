@@ -27,6 +27,11 @@ public class Pokemon {
         this.type = type;
     }
 
+    public Pokemon(String name, String type) {
+        this.name = name;
+        this.type = type;
+    }
+
     public int getId() {
         return id;
     }
