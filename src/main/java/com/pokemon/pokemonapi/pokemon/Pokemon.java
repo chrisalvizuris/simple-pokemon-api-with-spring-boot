@@ -1,6 +1,20 @@
 package com.pokemon.pokemonapi.pokemon;
 
+import javax.persistence.*;
+
+@Entity
+@Table
 public class Pokemon {
+    @Id
+    @SequenceGenerator(
+            name = "pokemon_sequence",
+            sequenceName = "pokemon_sequence",
+            allocationSize = 1
+    )
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "pokemon_sequence"
+    )
     private int id;
     private String name;
     private String type;

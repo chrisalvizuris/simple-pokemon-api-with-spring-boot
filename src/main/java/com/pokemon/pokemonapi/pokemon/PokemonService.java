@@ -7,6 +7,9 @@ import java.util.List;
 @Service
 public class PokemonService {
     public List<Pokemon> getPokemon() {
-        return List.of(new Pokemon(1, "Pikachu", "Electric"));
+        return List.of(new Pokemon(
+                1,
+                "Pikachu",
+                "Electric"));
     }
 }
